@@ -16,11 +16,11 @@ class Restaurant {
 
   get comboPrice () {
     // Add logic here to calc and return combo price
-    
     let totalPrice = 0
    for (const food in this.menu) {
      totalPrice += this.menu[food]
    }
+  
  
 // toFixed outputs a string.  the 2 is for 2 decimal spaces
     return `$${(totalPrice * this.comboDiscount).toFixed(2)}`
@@ -58,4 +58,11 @@ console.log(xrest.comboPrice)
   a setter. So while the following code will not throw an error, it won't change the output.
 */
 
+// set combo (items) {
+//   if (typeof(items) === "array")
+//   this._combo = items
+// }
 
+// get combo() {
+//   return this._combo
+// }
